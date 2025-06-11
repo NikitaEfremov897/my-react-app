@@ -1,15 +1,25 @@
 import React from 'react';
-import Message from './Message'; 
+import MainLayout from './layouts/MainLayout';
+import HeroSection from './components/HeroSection/HeroSection';
+import ImageSlider from './components/ImageSlider/ImageSlider';
+import QuoteSection from './components/QuoteSection/QuoteSection';
+import FeaturesSection from './components/FeaturesSection/FeaturesSection';
+import ConnectSection from './components/ConnectSection/ConnectSection';
+import CtaSection from './components/CtaSection/CtaSection';
 
-function App() {
-  const messageText = "ПРИВЕТ";
-
+const App: React.FC = () => {
   return (
-    <div>
-      <h1>Мое приложение</h1>
-      <Message text={messageText} />
-    </div>
+    <MainLayout>
+      <>
+        <HeroSection />
+        <ImageSlider />
+        <QuoteSection />
+        <FeaturesSection />
+        <ConnectSection />
+        <CtaSection />
+      </>
+    </MainLayout>
   );
-}
+};
 
 export default App;

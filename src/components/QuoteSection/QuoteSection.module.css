@@ -1,0 +1,27 @@
+/* QuoteSection.module.css */
+.quote {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+.imgDop1,
+.imgDop2 {
+  width: 70px;
+}
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}

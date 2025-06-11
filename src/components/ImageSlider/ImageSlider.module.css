@@ -1,0 +1,29 @@
+/* ImageSlider.module.css */
+.bloktem {
+  position: relative;
+  height: 600px;
+  background-color: black;
+  overflow: hidden;
+}
+.bloktem::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: linear-gradient(to top, black 50%, white 50%);
+}
+.heroImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.heroImage.active {
+  display: block;
+}

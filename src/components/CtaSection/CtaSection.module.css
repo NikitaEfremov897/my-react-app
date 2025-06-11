@@ -1,0 +1,39 @@
+/* CtaSection.module.css */
+.cta {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+  margin-top: 40px;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.textContainer {
+  max-width: 400px;
+}
+.cta h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.ctaButton {
+  background-color: #3d1edd;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+.ctaButton:hover {
+  background-color: #2b13b3;
+}
+.ctaImage {
+  max-width: 100%;
+  height: auto;
+}

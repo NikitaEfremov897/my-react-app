@@ -1,0 +1,29 @@
+/* ConnectSection.module.css */
+.connect {
+  margin: 40px 0;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.connectImage {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 40%;
+}
+.connectText {
+  max-width: 600px;
+  flex: 1 1 50%;
+}
+.connectText h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.connectText p {
+  font-size: 18px;
+}
