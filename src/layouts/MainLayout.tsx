@@ -27,11 +27,7 @@ const MainLayout: React.FC<LayoutProps> = ({ children }) => {
       }} />
       <main>{children}</main>
       <Footer />
-      <AuthModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        modalType={modalType}
-      />
+      <AuthModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modalType={modalType} />
     </>
   );
 };
