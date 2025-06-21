@@ -1,6 +1,3 @@
-# Frontend-разработка.
-# Модуль 3. Фреймворки для Frontend.
-# Структура проекта
 .
 ├── .gitignore
 ├── README.md
@@ -75,7 +72,4 @@
 ├── tsconfig.node.json
 └── vite.config.ts
 
-# Запуск
-npm run dev, открыть в браузере
-# Сборка
-npm run build
+19 directories, 53 files
