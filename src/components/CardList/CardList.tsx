@@ -8,7 +8,6 @@ interface Comment {
   email: string;
   body: string;
 }
-
 interface CardListProps {
   limit?: number;
 }
