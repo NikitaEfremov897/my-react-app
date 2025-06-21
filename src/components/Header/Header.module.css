@@ -11,6 +11,11 @@
   justify-content: space-between;
   align-items: center;
 }
+.logoLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo h4 {
   font-weight: bold;
   font-size: 1.5rem;
@@ -30,6 +35,16 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.forRecruiters {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  margin-right: 20px;
+}
+
 .signUp {
   background-color: #3D1EDD;
 }

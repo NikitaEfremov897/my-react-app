@@ -1,25 +1,19 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
-import HeroSection from './components/HeroSection/HeroSection';
-import ImageSlider from './components/ImageSlider/ImageSlider';
-import QuoteSection from './components/QuoteSection/QuoteSection';
-import FeaturesSection from './components/FeaturesSection/FeaturesSection';
-import CardList from './components/CardList/CardList';
-import ConnectSection from './components/ConnectSection/ConnectSection';
-import CtaSection from './components/CtaSection/CtaSection';
+import HomePage from './pages/HomePage';
+import CardsPage from './pages/CardsPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App: React.FC = () => {
   return (
-    <MainLayout>
-      <>
-        <HeroSection />
-        <ImageSlider />
-        <QuoteSection />
-        <CardList />
-        <ConnectSection />
-        <CtaSection />
-      </>
-    </MainLayout>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="cards" element={<CardsPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+    </Routes>
   );
 };
 

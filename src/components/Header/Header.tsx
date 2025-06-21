@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 interface HeaderProps {
@@ -10,7 +11,9 @@ const Header: React.FC<HeaderProps> = ({ onAuthClick }) => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <h4>Jobly</h4>
+          <Link to="/" className={styles.logoLink}>
+            <h4>Jobly</h4>
+          </Link>
         </div>
         <nav className={styles.nav}>
           <a href="#" className={styles.forRecruiters}>For Recruiters</a>

@@ -3,12 +3,9 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import AuthModal from '../components/AuthModal/AuthModal';
 import Preloader from '../components/Preloader/Preloader';
+import { Outlet } from 'react-router-dom';
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-const MainLayout: React.FC<LayoutProps> = ({ children }) => {
+const MainLayout: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalType, setModalType] = useState<'signup' | 'login'>('signup');
   const [isLoading, setIsLoading] = useState(true);
@@ -21,11 +18,15 @@ const MainLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Preloader isLoading={isLoading} />
-      <Header onAuthClick={(type) => {
-        setModalType(type);
-        setIsModalOpen(true);
-      }} />
-      <main>{children}</main>
+      <Header
+        onAuthClick={(type) => {
+          setModalType(type);
+          setIsModalOpen(true);
+        }}
+      />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
       <AuthModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} modalType={modalType} />
     </>
