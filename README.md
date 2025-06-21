@@ -8,7 +8,7 @@
 -Модальные окна входа и регистрации
 -Прелоадер при запуске страницы
 -Полная типизация компонентов с TypeScript
-
+<pre><small>
 .
 ├── README.md
 ├── eslint.config.js
@@ -80,4 +80,5 @@
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
+</small></pre>
 
